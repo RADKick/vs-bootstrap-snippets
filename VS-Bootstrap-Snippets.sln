@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5FC36B9E-7F84-4FCA-B457-4F805BE31FB4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		build.js = build.js
+		change-log.md = change-log.md
+		LICENSE = LICENSE
+		package-lock.json = package-lock.json
+		package.json = package.json
+		README.md = README.md
+		snippet-listing-markdown.handlebars = snippet-listing-markdown.handlebars
+		snippet-listing.md = snippet-listing.md
+		UpgradeLog.htm = UpgradeLog.htm
+		VisualStudioGalleryDescription.html = VisualStudioGalleryDescription.html
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VS-Bootstrap-Snippets", "VS-Bootstrap-Snippets\VS-Bootstrap-Snippets.csproj", "{8E22CEFC-9F0E-4BC4-B2C3-E928CBE53F52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E22CEFC-9F0E-4BC4-B2C3-E928CBE53F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E22CEFC-9F0E-4BC4-B2C3-E928CBE53F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E22CEFC-9F0E-4BC4-B2C3-E928CBE53F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E22CEFC-9F0E-4BC4-B2C3-E928CBE53F52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {513D162E-2BD8-4B8C-B00B-981A88ACAA10}
+	EndGlobalSection
+EndGlobal

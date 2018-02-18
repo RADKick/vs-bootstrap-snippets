@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Popover</Title>
+			<Author>Ritesh Pahwa</Author>
+			<Description>Add small overlays of content, like those on the iPad, to any element for housing secondary information.</Description>
+			<Shortcut>bs3-popover</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+        <Literal>
+          <ID>title</ID>
+          <ToolTip>The title for the popover</ToolTip>
+          <Default>Popover title</Default>
+        </Literal>
+				<Literal>
+					<ID>popover</ID>
+					<ToolTip>The text for the popover</ToolTip>
+					<Default>And here's some amazing content. It's very engaging. Right?</Default>
+				</Literal>
+				<Literal>
+					<ID>content</ID>
+					<ToolTip>The content for the popover link</ToolTip>
+					<Default>Click to toggle popover</Default>
+				</Literal>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Appearance: default primary success danger warning info</ToolTip>
+          <Default>default</Default>
+        </Literal>
+      </Declarations>
+			<Code Language="HTML">
+				<![CDATA[<button type="button" class="btn btn-$context$" data-toggle="popover" title="$title$" data-content="$popover$">$content$</button>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

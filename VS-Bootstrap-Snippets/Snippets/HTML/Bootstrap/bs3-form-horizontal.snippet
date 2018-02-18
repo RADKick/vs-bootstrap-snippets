@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Form horizontal</Title>
+			<Author>Ritesh Pahwa</Author>
+			<Description>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding .form-horizontal to the form. Doing so changes .form-groups to behave as grid rows, so no need for .row.</Description>
+			<Shortcut>bs3-form-horizontal</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+      <Declarations>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Appearance: default primary success danger warning info</ToolTip>
+          <Default>default</Default>
+        </Literal>
+      </Declarations>
+			<Code Language="HTML">
+				<![CDATA[<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label class="col-sm-2 control-label" for="exampleInputEmail">Email address</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-$context$">Submit</button>
+    </div>
+  </div>
+</form>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

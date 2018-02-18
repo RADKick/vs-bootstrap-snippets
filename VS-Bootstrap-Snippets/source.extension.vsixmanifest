@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="VS-Bootstrap-Snippets.29c389dd-4e9c-4fe3-a801-a677c04bd677" Version="1.0" Language="en-US" Publisher="Ritesh Pahwa" />
+        <DisplayName>VS-Bootstrap-Snippets</DisplayName>
+        <Description xml:space="preserve">Empty VSIX Project.</Description>
+        <MoreInfo>https://github.com/radkick/vs-bootstrap-snippets</MoreInfo>
+        <License>LICENSE.txt</License>
+        <Icon>_bootstrap.png</Icon>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
+        <InstallationTarget Version="[15.0]" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Version="[15.0]" Id="Microsoft.VisualStudio.Enterprise" />
+        <InstallationTarget Version="[14.0]" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Version="[13.0]" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Version="[11.0]" Id="Microsoft.VisualStudio.Pro" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="snippets.pkgdef" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

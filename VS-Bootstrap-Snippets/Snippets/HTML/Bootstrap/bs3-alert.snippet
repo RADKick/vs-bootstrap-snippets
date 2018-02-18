@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Alert</Title>
+			<Author>Ritesh Pahwa</Author>
+			<Description>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</Description>
+			<Shortcut>bs3-alert</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>content</ID>
+					<ToolTip>The content for the alert</ToolTip>
+					<Default><![CDATA[<strong>Warning!</strong> Better check yourself, you're not looking too good.]]></Default>
+				</Literal>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Appearance: default primary success danger warning info</ToolTip>
+          <Default>default</Default>
+        </Literal>
+      </Declarations>
+			<Code Language="HTML">
+				<![CDATA[<div class="alert alert-$context$ alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  $content$
+</div>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

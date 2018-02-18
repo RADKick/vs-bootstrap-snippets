@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Panel</Title>
+			<Author>Ritesh Pahwa</Author>
+			<Description>While not always necessary, sometimes you need to put your DOM in a box. For those situations, try the panel component.</Description>
+			<Shortcut>bs3-panel</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>heading</ID>
+					<ToolTip>The heading text for the panel</ToolTip>
+					<Default>Panel heading</Default>
+				</Literal>
+				<Literal>
+					<ID>content</ID>
+					<ToolTip>The content for the panel</ToolTip>
+					<Default>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Default>
+				</Literal>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Appearance: default primary success danger warning info</ToolTip>
+          <Default>default</Default>
+        </Literal>
+      </Declarations>
+			<Code Language="HTML">
+				<![CDATA[<div class="panel panel-$context$">
+  <div class="panel-heading">$heading$</div>
+  <div class="panel-body">
+    $content$
+  </div>
+</div>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,24 @@
+{
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "name": "vs-bootstrap-snippets",
+  "description": "Visual Studio - Bootstrap 3 and Bootstrap 4 Snippets",
+  "version": "0.7.0",
+  "main": "build.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radkick/vs-bootstrap-snippets.git"
+  },
+  "author": "Ritesh Pahwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radkick/vs-bootstrap-snippets/issues"
+  },
+  "homepage": "https://github.com/radkick/vs-bootstrap-snippets",
+  "devDependencies": {
+    "glob": "~5.0.5",
+    "handlebars": "~3.0.2",
+    "xml2js": "~0.4.8"
+  }
+}
