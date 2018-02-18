@@ -1,19 +1,19 @@
-Visual Studio Bootstrap 3 and Bootstrap 4 Snippets 
+Visual Studio Bootstrap 4 and Bootstrap 3 Snippets 
 =====================================
+
+[Download the extension from Visual Studio market place](https://marketplace.visualstudio.com/items?itemName=RADKick.VSBootstrapSnippets)
 
 Inspired by Eric Lebetsamer's repository https://github.com/radkick/vs-bootstrap-snippets 
 
-Added Bootstrap V4 and few more features like contextual themes and sizes. 
+Adding Bootstrap V4 and few more features like contextual themes and sizes. 
 
 Support for BS4 snippets using bs4-, and renamed bs- to bs3- to make it compatible for different versions of bootstrap projects in Visual Studio.
 
-## The ultimate snippet pack for web developers using the Twitter Bootstrap V3 and V4
+## The ultimate snippet pack for web developers using the Twitter Bootstrap V4 and Bootstrap V3
 
 [Twitter Bootstrap V4](https://getbootstrap.com/) and [Bootstrap V3](https://getbootstrap.com/docs/3.3/) snippets for Visual Studio 2012/2013/2015/2017.
 
 The code snippets are currently based on Bootstrap **4.0.0** and **3.3.7** 
-
-[Download the extension](https://visualstudiogallery.msdn.microsoft.com/)
 
 [Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/snippet-listing.md)
 
