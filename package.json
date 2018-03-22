@@ -4,7 +4,7 @@
   },
   "name": "vs-bootstrap-snippets",
   "description": "Visual Studio - Bootstrap 3 and Bootstrap 4 Snippets",
-  "version": "0.7.0",
+  "version": "0.7.5",
   "main": "build.js",
   "repository": {
     "type": "git",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/radkick/vs-bootstrap-snippets",
   "devDependencies": {
-    "glob": "~5.0.5",
-    "handlebars": "~3.0.2",
-    "xml2js": "~0.4.8"
+    "glob": "^7.1.2",
+    "handlebars": "^4.0.11",
+    "xml2js": "^0.4.19"
   }
 }

@@ -6,6 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5FC36B9E-7F84-4FCA-B457-4F805BE31FB4}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		bs3-snippet-listing.md = bs3-snippet-listing.md
+		bs4-snippet-listing.md = bs4-snippet-listing.md
 		build.js = build.js
 		change-log.md = change-log.md
 		LICENSE = LICENSE
@@ -13,7 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		package.json = package.json
 		README.md = README.md
 		snippet-listing-markdown.handlebars = snippet-listing-markdown.handlebars
-		snippet-listing.md = snippet-listing.md
 		UpgradeLog.htm = UpgradeLog.htm
 		VisualStudioGalleryDescription.html = VisualStudioGalleryDescription.html
 	EndProjectSection

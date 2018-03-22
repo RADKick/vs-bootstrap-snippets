@@ -5,6 +5,9 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <TargetFrameworkProfile />
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>_bootstrap.ico</ApplicationIcon>
+  </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,6 +38,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CopyVsixExtensionFiles>False</CopyVsixExtensionFiles>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -48,47 +52,144 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Snippets\HTML\Bootstrap\bs3-accordion.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-alert.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-badge.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-breadcrumb.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-btn-dropdown-split.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-btn-dropdown.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-btn-group.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-btn-toolbar.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-btn.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-carousel.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-collapse.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-group-checkbox.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-group-horizontal-checkbox.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-group-horizontal.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-group-inline.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-group-radio.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-group-select.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-group.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-horizontal.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form-inline.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-form.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-glyphicon.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-input-group.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-jumbotron.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-label.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-list-group.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-media-list.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-media-object.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-modal.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-nav-pills.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-nav-tabs.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-navbar.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-page-header.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-pager.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-pagination.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-panel.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-popover.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-progress-bar.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3--init.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-thumbnail.snippet" />
-    <None Include="Snippets\HTML\Bootstrap\bs3-tooltip.snippet" />
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-accordion.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-alert.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-badge.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-breadcrumb.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-btn-dropdown-split.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-btn-dropdown.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-btn-group.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-btn-toolbar.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-btn.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-carousel.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-collapse.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-group-checkbox.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-group-horizontal-checkbox.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-group-horizontal.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-group-inline.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-group-radio.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-group-select.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-group.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-horizontal.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form-inline.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-form.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-glyphicon.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-input-group.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-jumbotron.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-label.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-list-group.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-media-list.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-media-object.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-modal.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-nav-pills.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-nav-tabs.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-navbar.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-page-header.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-pager.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-pagination.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-panel.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-popover.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-progress-bar.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3--init.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-thumbnail.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap3\bs3-tooltip.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap4\bs4-btn.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap4\bs4-btn-group.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap4\bs4-btn-toolbar.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap4\bs4-btn-dropdown.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="Snippets\HTML\Bootstrap4\bs4-btn-dropdown-split.snippet">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -110,7 +211,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Snippets\HTML\Bootstrap\_default.png" />
+    <Content Include="Snippets\HTML\Bootstrap3\_default.png" />
     <Content Include="stylesheet.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

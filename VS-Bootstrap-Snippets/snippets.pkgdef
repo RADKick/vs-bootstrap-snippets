@@ -1,3 +1,4 @@
 ﻿// HTML
 [$RootKey$\Languages\CodeExpansions\HTML\Paths]
-"Bootstrap"="$PackageFolder$\Snippets\HTML\Bootstrap"
+"Bootstrap3"="$PackageFolder$\Snippets\HTML\Bootstrap3"
+"Bootstrap4"="$PackageFolder$\Snippets\HTML\Bootstrap4"

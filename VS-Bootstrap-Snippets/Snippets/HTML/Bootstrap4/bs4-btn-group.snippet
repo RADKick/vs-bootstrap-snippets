@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Button group</Title>
+			<Author>Ritesh Pahwa</Author>
+			<Description>Group a series of buttons together on a single line with the button group.</Description>
+			<Shortcut>bs4-btn-group</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+      <Declarations>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Appearance: default primary success danger warning info</ToolTip>
+          <Default>default</Default>
+        </Literal>
+        <Literal>
+          <ID>size</ID>
+          <ToolTip>Size: df xs sm lg (use df as a default placeholder)</ToolTip>
+          <Default>df</Default>
+        </Literal>
+      </Declarations>
+			<Code Language="HTML">
+				<![CDATA[<div class="btn-group btn-group-$size$" role="group" aria-label="...">
+  <button type="button" class="btn btn-$context$">Left</button>
+  <button type="button" class="btn btn-$context$">Middle</button>
+  <button type="button" class="btn btn-$context$">Right</button>
+</div>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

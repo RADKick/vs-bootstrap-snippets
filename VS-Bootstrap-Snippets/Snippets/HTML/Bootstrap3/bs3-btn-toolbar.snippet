@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Button toolbar</Title>
+			<Author>Ritesh Pahwa</Author>
+			<Description><![CDATA[Combine sets of <div class="btn-group"> into a <div class="btn-toolbar"> for more complex components.]]></Description>
+			<Shortcut>bs3-btn-toolbar</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+      <Declarations>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Appearance: default primary success danger warning info</ToolTip>
+          <Default>default</Default>
+        </Literal>
+        <Literal>
+          <ID>size</ID>
+          <ToolTip>Size: df xs sm lg (use df as a default placeholder)</ToolTip>
+          <Default>df</Default>
+        </Literal>
+      </Declarations>
+			<Code Language="HTML">
+				<![CDATA[<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group btn-group-$size$" role="group" aria-label="First group">
+    <button type="button" class="btn btn-$context$">1</button>
+    <button type="button" class="btn btn-$context$">2</button>
+    <button type="button" class="btn btn-$context$">3</button>
+    <button type="button" class="btn btn-$context$">4</button>
+  </div>
+  <div class="btn-group btn-group-$size$" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-$context$">5</button>
+    <button type="button" class="btn btn-$context$">6</button>
+    <button type="button" class="btn btn-$context$">7</button>
+  </div>
+  <div class="btn-group btn-group-$size$" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-$context$">8</button>
+  </div>
+</div>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

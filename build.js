@@ -13,50 +13,55 @@ var parser = new xml2js.Parser({
 	ignoreAttrs: false
 });
 
-glob(__dirname + '/VS-Bootstrap-Snippets/Snippets/HTML/Bootstrap/*.snippet', function (err, files) {
-	var snippets = [];
+listSnippets(4);
+listSnippets(3);
 
-	files.forEach(function (file) {
-		fs.readFile(file, {encoding: 'utf8'}, function (err, data) {
-			parser.parseString(data, function (err, result) {
-				var snippet = {
-					'file': file,
-					'title': result.CodeSnippet.Header.Title,
-					'shortcut': result.CodeSnippet.Header.Shortcut,
-					'description': result.CodeSnippet.Header.Description,
-					'language': result.CodeSnippet.Snippet.Code.$.Language,
-					'declarations': []
-				}
+function listSnippets(bsv) {
+    glob(__dirname + '/VS-Bootstrap-Snippets/Snippets/HTML/Bootstrap'+bsv+'/*.snippet', function (err, files) {
+        var snippets = [];
 
-				if (result.CodeSnippet.Snippet.Declarations && result.CodeSnippet.Snippet.Declarations.Literal) {
-					if (util.isArray(result.CodeSnippet.Snippet.Declarations.Literal)) {
-						result.CodeSnippet.Snippet.Declarations.Literal.forEach(function (declaration) {
-							snippet.declarations[snippet.declarations.length] = {
-								'id': declaration.ID,
-								'tooltip': declaration.ToolTip,
-								'default': declaration.Default
-							};
-						});
-					} else {
-						snippet.declarations[snippet.declarations.length] = {
-							'id': result.CodeSnippet.Snippet.Declarations.Literal.ID,
-							'tooltip': result.CodeSnippet.Snippet.Declarations.Literal.ToolTip,
-							'default': result.CodeSnippet.Snippet.Declarations.Literal.Default
-						};
-					}
-				}
+        files.forEach(function (file) {
+            fs.readFile(file, { encoding: 'utf8' }, function (err, data) {
+                parser.parseString(data, function (err, result) {
+                    var snippet = {
+                        'file': file,
+                        'title': result.CodeSnippet.Header.Title,
+                        'shortcut': result.CodeSnippet.Header.Shortcut,
+                        'description': result.CodeSnippet.Header.Description,
+                        'language': result.CodeSnippet.Snippet.Code.$.Language,
+                        'declarations': []
+                    }
 
-				snippets[snippets.length] = snippet;
+                    if (result.CodeSnippet.Snippet.Declarations && result.CodeSnippet.Snippet.Declarations.Literal) {
+                        if (util.isArray(result.CodeSnippet.Snippet.Declarations.Literal)) {
+                            result.CodeSnippet.Snippet.Declarations.Literal.forEach(function (declaration) {
+                                snippet.declarations[snippet.declarations.length] = {
+                                    'id': declaration.ID,
+                                    'tooltip': declaration.ToolTip,
+                                    'default': declaration.Default
+                                };
+                            });
+                        } else {
+                            snippet.declarations[snippet.declarations.length] = {
+                                'id': result.CodeSnippet.Snippet.Declarations.Literal.ID,
+                                'tooltip': result.CodeSnippet.Snippet.Declarations.Literal.ToolTip,
+                                'default': result.CodeSnippet.Snippet.Declarations.Literal.Default
+                            };
+                        }
+                    }
 
-				if (snippets.length == files.length) {
-					processSnippets(snippets);
-				}
-			});
-		});
-	});
-});
+                    snippets[snippets.length] = snippet;
 
-function processSnippets(snippets) {
+                    if (snippets.length == files.length) {
+                        processSnippets(bsv, snippets);
+                    }
+                });
+            });
+        });
+    });
+}
+
+function processSnippets(bsv, snippets) {
 	snippets.sort(function (a, b) {
 		var keyA = a.shortcut,
 			keyB = b.shortcut;
@@ -71,6 +76,6 @@ function processSnippets(snippets) {
 		var template = handlebars.compile(data.toString());
 		var markdown = template({snippets: snippets});
 
-		fs.writeFileSync("snippet-listing.md", markdown);
+		fs.writeFileSync("bs"+bsv+"-snippet-listing.md", markdown);
 	});
 }

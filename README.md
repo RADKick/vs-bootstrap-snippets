@@ -1,7 +1,7 @@
 Visual Studio Bootstrap 4 and Bootstrap 3 Snippets 
 =====================================
 
-[Download the extension from Visual Studio market place](https://marketplace.visualstudio.com/items?itemName=RADKick.VSBootstrapSnippets)
+Download this extension from [Visual Studio market place](https://marketplace.visualstudio.com/items?itemName=RADKick.VSBootstrapSnippets)
 
 Inspired by Eric Lebetsamer's repository https://github.com/radkick/vs-bootstrap-snippets 
 
@@ -15,13 +15,14 @@ Support for BS4 snippets using bs4-, and renamed bs- to bs3- to make it compatib
 
 The code snippets are currently based on Bootstrap **4.0.0** and **3.3.7** 
 
-[Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/snippet-listing.md)
+[Bootstrap 4 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs4-snippet-listing.md)
+[Bootstrap 3 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs3-snippet-listing.md)
 
 [Change log](https://github.com/radkick/vs-bootstrap-snippets/blob/master/change-log.md)
 
 ## How to use snippets in Visual Studio
 
-you can type bs3- and then press the TAB key twice. Alternatively, you can type button and then press the TAB key once. When you do, the editor completes the markup for the Button control by inserting the following markup:
+you can type <bs4- and then press the TAB key twice. Alternatively, you can type button and then press the TAB key once. When you do, the editor completes the markup for the Button control by inserting the following markup:
 
 However, you can also insert code snippets in the following ways:
 

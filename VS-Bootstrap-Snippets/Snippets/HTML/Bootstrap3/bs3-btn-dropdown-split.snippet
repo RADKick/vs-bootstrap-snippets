@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Button with dropdown split</Title>
+			<Author>Ritesh Pahwa</Author>
+			<Description>Use any button to trigger a dropdown menu by placing it within a .btn-group and providing the proper menu markup.</Description>
+			<Shortcut>bs3-btn-dropdown-split</Shortcut>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+      <Declarations>
+        <Literal>
+          <ID>context</ID>
+          <ToolTip>Appearance: default primary success danger warning info</ToolTip>
+          <Default>default</Default>
+        </Literal>
+        <Literal>
+          <ID>size</ID>
+          <ToolTip>Size: df sm lg (use df as a default placeholder)</ToolTip>
+          <Default>df</Default>
+        </Literal>
+      </Declarations>
+			<Code Language="HTML">
+				<![CDATA[<div class="btn-group btn-group-$size$">
+  <button type="button" class="btn btn-$context$">Save</button>
+  <button type="button" class="btn btn-$context$ dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Cancel</a></li>
+    <li><a href="#">Reset</a></li>
+    <li><a href="#">New</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Close</a></li>
+  </ul>
+</div>$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
