@@ -3,7 +3,7 @@ Visual Studio Bootstrap 4 and Bootstrap 3 Snippets
 
 Download this extension from [Visual Studio market place](https://marketplace.visualstudio.com/items?itemName=RADKick.VSBootstrapSnippets)
 
-Inspired by Eric Lebetsamer's repository https://github.com/radkick/vs-bootstrap-snippets 
+Inspired by [Eric Lebetsamer's repository](https://github.com/elebetsamer/bootstrap-snippets-visual-studio)
 
 Adding Bootstrap V4 and few more features like contextual themes and sizes. 
 
@@ -15,7 +15,8 @@ Support for BS4 snippets using bs4-, and renamed bs- to bs3- to make it compatib
 
 The code snippets are currently based on Bootstrap **4.0.0** and **3.3.7** 
 
-[Bootstrap 4 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs4-snippet-listing.md) | 
+[Bootstrap 4 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs4-snippet-listing.md)
+ |  
 [Bootstrap 3 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs3-snippet-listing.md)
 
 [Change log](https://github.com/radkick/vs-bootstrap-snippets/blob/master/change-log.md)
@@ -27,12 +28,14 @@ you can type <bs4- and then press the TAB key twice. Alternatively, you can type
 However, you can also insert code snippets in the following ways:
 
 * Position the cursor where you want the inserted code snippet to appear, right-click the page, and then select Insert Snippet;
-* Position the cursor where you want the inserted code snippet to appear, and then press the keyboard shortcut CTRL+K, CTRL+X. A list appears that lets you select a snippet;
+* Position the cursor where you want the inserted code snippet to appear, and then press the keyboard shortcut CTRL+K, CTRL+B *
+A list appears that lets you select a snippet;
 * Select a word that you want to surround using a code snippet, and then right-click the word and click Surround With;
 * From the Edit menu, select IntelliSense, and then select Insert Snippet.
-![The "Code Snippets Manager" dialog](VS-Bootstrap-Snippets/preview.png)  
+![The "Code Snippets Manager" dialog](VS-Bootstrap-Snippets/CodeSnippetsManager.png)  
 The "Code Snippets Manager" dialog
 
+Note: * for more [Visual Studio shortcuts visit](http://visualstudioshortcuts.com/2017/)
 
 Todo
 ----
