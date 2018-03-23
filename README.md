@@ -37,6 +37,8 @@ The "Code Snippets Manager" dialog
 
 Note: * for more [Visual Studio shortcuts visit](http://visualstudioshortcuts.com/2017/)
 
+Need more snippets, send me message or connect with me at [Linkedin](https://www.linkedin.com/in/riteshpahwa/)
+
 Todo
 ----
 
