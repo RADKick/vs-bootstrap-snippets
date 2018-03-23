@@ -28,10 +28,10 @@ you can type <bs4- and then press the TAB key twice. Alternatively, you can type
 However, you can also insert code snippets in the following ways:
 
 * Position the cursor where you want the inserted code snippet to appear, right-click the page, and then select Insert Snippet;
-* Position the cursor where you want the inserted code snippet to appear, and then press the keyboard shortcut CTRL+K, CTRL+B *
-A list appears that lets you select a snippet;
+* Position the cursor where you want the inserted code snippet to appear, and then press the keyboard shortcut CTRL+K, CTRL+X *
+* A list appears that lets you select a snippet;
 * Select a word that you want to surround using a code snippet, and then right-click the word and click Surround With;
-* From the Edit menu, select IntelliSense, and then select Insert Snippet.
+* From the Edit menu, select IntelliSense, and then select Insert Snippet (or use shortcut Ctrl+K, Ctrl+B)*.
 ![The "Code Snippets Manager" dialog](VS-Bootstrap-Snippets/CodeSnippetsManager.png)  
 The "Code Snippets Manager" dialog
 
