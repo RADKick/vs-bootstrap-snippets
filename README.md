@@ -15,7 +15,7 @@ Support for BS4 snippets using bs4-, and renamed bs- to bs3- to make it compatib
 
 The code snippets are currently based on Bootstrap **4.0.0** and **3.3.7** 
 
-[Bootstrap 4 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs4-snippet-listing.md)
+[Bootstrap 4 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs4-snippet-listing.md) | 
 [Bootstrap 3 Snippet Listing](https://github.com/radkick/vs-bootstrap-snippets/blob/master/bs3-snippet-listing.md)
 
 [Change log](https://github.com/radkick/vs-bootstrap-snippets/blob/master/change-log.md)
